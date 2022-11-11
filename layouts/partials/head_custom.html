@@ -1,1 +1,10 @@
 <link rel="stylesheet" href="{{ "/css/custom.css" | relURL }}" />
+
+        <header id="header">
+            <a id="logo" href="{{ .Site.BaseURL }}"><img src="https://c-ssl.duitang.com/uploads/blog/202106/06/20210606080808_cd4f7.jpg" alt="{{ .Site.Title }}" /></a>
+            <h1><a href="{{.Site.BaseURL}}">{{.Site.Title}}</a></h1>
+            <p>{{.Description}}</p>
+
+            {{ partial "follow.html" . }}
+            {{ partial "navigation.html" . }}
+        </header>
